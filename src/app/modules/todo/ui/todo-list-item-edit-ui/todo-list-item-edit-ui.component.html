@@ -1,0 +1,5 @@
+<form (ngSubmit)="onEdit()">
+  <input type="text" name="name" [(ngModel)]="name" />
+  <button [disabled]="!name">Ok</button>
+  <button type="button" (click)="onCancel()">Cancel</button>
+</form>
